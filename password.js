@@ -20,7 +20,7 @@ const reader = readline.createInterface({
     const num9 = tokens[9];
     const num10 = tokens[10];
 
-    if (tokens[10]){
+    if (input.length >= 10){
         console.log("success")
     } else {
         console.log("fail")

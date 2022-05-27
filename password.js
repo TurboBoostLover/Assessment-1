@@ -8,10 +8,12 @@ const reader = readline.createInterface({
 
   reader.question("Enter your password \n", function(input){
 	
-    if (input.length >= 10){
+    if (input.length >= 10 && /\d/.test(input)){
         console.log("success")
-    } else {
+    } else if (input.length < 10){
         console.log("fail")
+    } else if (!/\d/.test(input)){
+        console.log("bad password, need a number")
     }
     reader.close()
 	

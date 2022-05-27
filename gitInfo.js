@@ -33,7 +33,11 @@ let gitHubDefinition = "GitHub is the cloud or outsourced server that can store 
     following the guidelines above to describe the init command.
 */
 
-let init = "Initialize the project to be able to a git repo. " && "git init"
+let init = {
+    description: "Initialize the project to be able to a git repo",
+    code: "git init",
+}
+    
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -41,7 +45,12 @@ let init = "Initialize the project to be able to a git repo. " && "git init"
     following the guidelines above to describe the clone command.
 */
 
-let clone = "to point to an existing repo and make a clone or copy of that repo at in a new directory, or another location" && "git clone <repo> <directory>"
+let clone = {
+    description: "to point to an existing repo and make a clone or copy of that repo at in a new directory, or another location",
+    code: "git clone <repo> <directory>",
+}
+
+
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -49,15 +58,20 @@ let clone = "to point to an existing repo and make a clone or copy of that repo 
     following the guidelines above to describe the status command.
 */
 
-let status = "displays the state of the working directory and the staging area of code that has been initilized" && "git status"
-
+let status = {
+    description: "displays the state of the working directory and the staging area of code that has been initilized",
+    code: "git status",
+}
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
     following the guidelines above to describe the add command.
 */
 
-let add = "adds a change in the working directory to the staging area" && "git add . or git add (filename)"
+let add = {
+    description: "adds a change in the working directory to the staging area",
+    code: "git add . or git add (filename)",
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -65,7 +79,10 @@ let add = "adds a change in the working directory to the staging area" && "git a
     following the guidelines above to describe the commit command.
 */
 
-let commit = "captures a snapshot of the project's currently staged changes or is like the save button" && "git commit or as we use git commit -m"
+let commit = {
+    description: "captures a snapshot of the project's currently staged changes or is like the save button",
+    code: "git commit or as we use git commit -m",
+}
 
 
 //////////////////PROBLEM 8////////////////////
@@ -74,4 +91,7 @@ let commit = "captures a snapshot of the project's currently staged changes or i
     following the guidelines above to describe the push command.
 */
 
-let push = "upload local repository content to a remote repository or for our example github" && "git push"
+let push = {
+    description: "upload local repository content to a remote repository or for our example github",
+    code: "git push",
+}
